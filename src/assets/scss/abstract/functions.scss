@@ -1,0 +1,11 @@
+@function calculate-width($col-span) {
+  @return 100% / $col-span;
+}
+
+@function rem($target, $base-font-size: 16) {
+  @return ($target / $base-font-size) * 1rem;
+}
+
+// .span-three {
+//   width: calculate-width(3); // spans 3 columns, width = 33.3%
+// }

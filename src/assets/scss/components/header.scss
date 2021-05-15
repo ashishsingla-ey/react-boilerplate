@@ -1,0 +1,55 @@
+#top-header {
+  background-color: $blue-diamond !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+  line-height: 17px;
+  -webkit-user-drag: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $white;
+}
+
+/* .nav-menu-item.nav-item:hover {
+  background-color: transparent !important;
+} */
+
+.nav-menu-list .dropdown-menu {
+  margin-top: rem(20) !important;
+  box-shadow: 0 3px 6px $black16, 0 3px 6px $black23;
+  margin-left: rem(-20) !important;
+  width: 227px;
+  height: 147px;
+  z-index: 10000 !important;
+  -webkit-user-drag: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: transparent !important;
+  color: $secondary !important;
+  -webkit-user-drag: none;
+}
+
+/* .nav-menu-list .dropdown-menu:hover {
+  color: $secondary !important
+} */
+
+.nav-menu-list .dropdown-menu:last-child {
+  border: none;
+}
+
+.dropdown-toggle::after {
+  margin-left: rem(100);
+  content: url('../../images/drop_arrow.svg');
+  border-top: 0;
+  vertical-align: initial;
+}
+
+.nav-logout .dropdown-menu {
+  margin-left: rem(-90) !important;
+  margin-top: rem(7);
+  width: max-content;
+}

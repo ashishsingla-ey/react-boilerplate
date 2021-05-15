@@ -1,0 +1,34 @@
+.grid_icon_size {
+  @include icon-size(24px, 24px);
+}
+
+.card_icon_size {
+  @include icon-size(27px, 27px);
+}
+
+.card_icon_bg {
+  background-color: $pattens-blue;
+  border-radius: 100%;
+  padding: rem(12);
+  height: 48px;
+  width: 48px;
+}
+
+.add_icon_size {
+  @include icon-size(40px, 40px);
+}
+
+.card-heading {
+  color: $blue-diamond;
+  font-weight: normal;
+  font-size: rem(16);
+}
+
+.dcCardOption .dropdown-menu {
+  left: rem(-35) !important;
+  margin-left: 0px !important;
+}
+
+.dc-card-text-color {
+  color: $bright-grey;
+}

@@ -1,0 +1,38 @@
+/* Sidebar */
+#sidebar-wrapper {
+  background-color: $white;
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  background-color: $blue-diamond;
+}
+
+#sidebar-wrapper .sidebar-heading img {
+  width: 200px;
+  height: 56px;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#sidebar-wrapper .selected {
+  /* background-color: $secondary; */
+  background-color: $very-light-grey;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0 !important;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem !important;
+  }
+}

@@ -1,0 +1,99 @@
+//global icons for connections & datasources
+
+.s3a {
+  background: url('../../images/amazon_redshift.svg') no-repeat;
+}
+
+.gcs {
+  background: url('../../images/google-cloud_logo.svg') no-repeat;
+}
+
+.hdfs {
+  background: url('../../images/hdfs.svg') no-repeat;
+}
+
+.sftp {
+  background: url('../../images/sftp.svg') no-repeat;
+}
+
+.jdbc {
+  background: url('../../images/jdbc.svg') no-repeat;
+}
+
+.cloud_warehouse {
+  background: url('../../images/cloudWarehouse.svg') no-repeat;
+}
+
+.no_sql {
+  background: url('../../images/sqlserver_logo.svg') no-repeat;
+}
+
+.json {
+  background: url('../../images/json_filetype.svg') no-repeat;
+}
+
+.tsv {
+  background: url('../../images/tsv_filetype.svg') no-repeat;
+}
+
+.avro {
+  background: url('../../images/avro_filetype.svg') no-repeat;
+}
+
+.csv {
+  background: url('../../images/csv_filetype.svg') no-repeat;
+}
+
+.orc {
+  background: url('../../images/orc_filetype.svg') no-repeat;
+}
+
+.txt {
+  background: url('../../images/txt_filetyp.svg') no-repeat;
+}
+
+.parquet {
+  background: url('../../images/parquet_filetyp.svg') no-repeat;
+}
+
+.xml {
+  background: url('../../images/xml_filetype.svg') no-repeat;
+}
+
+.postgres {
+  background: url('../../images/postGresql.svg') no-repeat;
+}
+
+.mysql {
+  background: url('../../images/sql_server.svg') no-repeat;
+}
+
+.bigquery {
+  background: url('../../images/BigQuery.svg') no-repeat;
+}
+
+.cassandra {
+  background: url('../../images/cassendra.svg') no-repeat;
+}
+
+.mongodb {
+  background: url('../../images/mongoDB.svg') no-repeat;
+}
+
+.excel {
+  background: url('../../images/excel.svg') no-repeat;
+}
+
+.icon-close {
+  @include icon-size();
+  content: url('../../images/close.svg') !important;
+}
+
+.select-dropdown-arrow-icon::after {
+  content: url('../../images/select-dropdown-arrow-icon.svg') !important;
+}
+
+.drop-column {
+  @include icon-size();
+  content: url('../../images/drop_column.svg') !important;
+}

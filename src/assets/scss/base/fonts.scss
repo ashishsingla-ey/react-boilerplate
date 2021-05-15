@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  src: url('../../fonts/Telus-Web-Reg.eot');
+  /* IE9 Compat Modes */
+  src: local('Helvetica Neue Regular'),
+    url('../../fonts/Telus-Web-Reg.ttf') format('truetype'),
+    // default  Safari, Android, iOS
+      url('../../fonts/Telus-Web-Reg.woff') format('woff'),
+    /* Modern Browsers */ url('../../fonts/Telus-Web-Reg.woff2') format('woff2');
+  /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  src: local('Helvetica Neue Bold'),
+    url('../../fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-style: normal;
+  letter-spacing: -0.6px;
+  font-weight: normal;
+  src: url('../../fonts/Telus-Web-Lt.eot');
+  src: local('Helvetica Neue Light'),
+    url('../../fonts/Telus-Web-Lt.ttf') format('truetype'),
+    url('../../fonts/Telus-Web-Lt.woff') format('woff'),
+    url('../../fonts/Telus-Web-Lt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../fonts/Telus-Web-Med.eot');
+  src: local('Helvetica Neue Medium'),
+    url('../../fonts/Telus-Web-Med.ttf') format('truetype'),
+    url('../../fonts/Telus-Web-Med.woff') format('woff'),
+    url('../../fonts/Telus-Web-Med.woff2') format('woff2');
+}
+
+.ff-nl {
+  font-family: 'Helvetica Neue Light' !important;
+}
+
+.ff-nr {
+  font-family: 'Helvetica Neue Regular' !important;
+}
+
+.ff-nt {
+  font-family: 'Helvetica Neue Light' !important; //NOTE: 'nt is Helvetica Neue Thin(Prev) => Helvetica Neue Light(Now)
+}
+
+.ff-nm {
+  font-family: 'Helvetica Neue Medium' !important;
+}
+
+.ff-nb {
+  font-family: 'Helvetica Neue Bold' !important;
+}

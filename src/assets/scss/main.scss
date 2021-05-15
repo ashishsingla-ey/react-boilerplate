@@ -1,0 +1,29 @@
+@import './abstract/index.scss';
+
+@import './base/index.scss';
+
+@import './vendors/bootstrap.scss';
+
+@import './components/index.scss';
+
+/* DOCS
+IMPORTANT NOTE: order of import scss matter
+
+---abstract (isolated independed css)---
+functions: for calculations
+mixings  : resuable param wise scss
+variables: constant values for like color/any html/custom elements scss
+
+--base (fonts/) including standard styles such as resets and typographic rules
+fonts :  all fontfamily scss
+helpers: basic helper css
+
+---components (components is combination of resuable component and separate module wise css)--
+Note: for folder simplicity now we are used both reusable component and separate module wise in components folder
+Ideal case: components represent to only resuable component css and pages represent separate module wise scss.
+Optimzation case: Later on scss will be using module wise and only relevent css will be import (module name used by root through reduce css conflicts)
+common: global common css
+
+--vendors (third party library css)---
+bootstrap: third party bootstrap css
+*/

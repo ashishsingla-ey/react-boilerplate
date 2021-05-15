@@ -1,0 +1,33 @@
+// default icon-size will be 18px by height and width
+@mixin icon-size($height: 18px, $width: 18px, $align: middle) {
+  height: $height;
+  width: $width;
+  display: inline-block;
+  //   @if $align {
+  vertical-align: $align; //   }
+}
+
+@mixin cal-height($height) {
+  height: calc(100vh - #{$height});
+}
+
+// Form Select Dropdown button
+@mixin select-dropdown-button($isOpen: false) {
+  border: 1px solid $gainsboro;
+  width: 369px;
+  height: 40px;
+  color: $black1;
+  background-color: transparent;
+  text-align: left;
+
+  @if $isOpen==true {
+    border-radius: 5px 5px 0 0 !important;
+  } @else {
+    border-radius: 5px;
+  }
+
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}

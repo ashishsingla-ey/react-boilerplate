@@ -1,0 +1,184 @@
+// laylout
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 24px;
+  column-gap: 36px;
+  justify-content: space-between;
+}
+
+.con-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+//common
+.c-pointer {
+  cursor: pointer;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.fs-12 {
+  font-size: rem(12);
+}
+
+.fs-14 {
+  font-size: rem(14);
+}
+
+.fs-16 {
+  font-size: rem(16);
+}
+
+.fs-24 {
+  font-size: rem(24);
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+//height
+
+.h-10 {
+  height: 10px !important;
+}
+
+.h-40 {
+  height: 40px !important;
+}
+
+//width
+.w-368 {
+  width: 368px !important;
+}
+
+.width-100 {
+  width: 101px !important;
+}
+
+.width-200 {
+  width: 200px !important;
+}
+
+//padding
+.pad-8 {
+  padding: rem(8) !important;
+}
+
+//top-margin
+.mt-12 {
+  margin-top: rem(12) !important;
+}
+
+//left-margin
+.ml-50 {
+  margin-left: rem(50) !important;
+}
+
+.ml-35 {
+  margin-left: rem(35) !important;
+}
+
+.mr-55 {
+  margin-right: rem(55) !important;
+}
+
+//bottom-margin
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-40 {
+  margin-bottom: rem(40) !important;
+}
+
+//right-margin
+.mr-50 {
+  margin-right: rem(50) !important;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.overflow-x {
+  overflow-x: auto;
+}
+
+.overflow-y {
+  overflow-y: auto;
+}
+
+.overflow-x-hide {
+  overflow-x: hidden;
+}
+
+.d-contents {
+  display: contents;
+}
+
+.fs-s {
+  font-size: rem(14);
+}
+
+.flex-flow-column-reverse {
+  flex-flow: column-reverse;
+}
+
+.d-inline {
+  display: inline !important;
+  color: $blue-diamond;
+  font-weight: normal;
+}
+
+.bg-info {
+  background-color: $magnolia !important;
+  border: 1px solid $secondary !important;
+}
+
+.bg-info-dc {
+  background-color: $magnolia !important;
+  border: 1px solid $secondary !important;
+  // outline: 1px solid $secondary;
+  // outline-offset: -1px;
+  // box-shadow: 0 0 2px 1px $secondary !important;
+}
+
+//color
+.bright-grey {
+  color: $bright-grey !important;
+}
+
+.bunker-color {
+  color: $bunker !important;
+}
+
+.snow-bg {
+  background: $snow !important;
+}
+
+.opacity-5 {
+  opacity: 0.5 !important;
+}
+
+.highlight-row {
+  background-color: $blue-romance !important;
+}

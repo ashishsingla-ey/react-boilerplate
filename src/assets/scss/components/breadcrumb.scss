@@ -1,0 +1,26 @@
+.breadcrumb {
+  -webkit-user-drag: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+
+  .active {
+    color: $primary !important;
+    font-family: 'Helvetica Neue Regular' !important;
+    -webkit-user-drag: none;
+  }
+
+  .breadcrumb-item > a {
+    color: $bunker;
+    font-size: rem(14);
+    @extend .ff-nl !optional;
+    line-height: 24px;
+    -webkit-user-drag: none;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: url('../../images/icon_caret_right.svg');
+    @include icon-size(18px, 18px, null);
+    padding-top: rem(2);
+  }
+}
