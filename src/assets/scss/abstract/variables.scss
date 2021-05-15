@@ -1,0 +1,35 @@
+//-------colors------------
+// Override default variables before the imports from bootstrap
+// for example
+$body-bg: #fbfbfb;
+$primary: #4b286d;
+$secondary: #248700;
+// Import Bootstrap and its default variables (entire bootstrap)
+
+//custom variable color
+$harley-davidson-orange: #c12335; // color name by https://www.htmlcsscolor.com/hex/C13523
+$black1: #000;
+$black2: rgba(0, 0, 0, 0.2);
+$black19: rgba(0, 0, 0, 0.19);
+$black16: rgba(0, 0, 0, 0.16);
+$black23: rgba(0, 0, 0, 0.23);
+$black-current: #e1f6d9;
+$white: #ffffff;
+$whisper: #e5e5e5;
+$bright-grey: #54595f;
+$bright-grey-5: rgba(84, 89, 95, 0.5);
+$very-light-grey: #cccccc;
+$bunker: #2a2c2e;
+$blue-diamond: #4b286d;
+$snow: #fbfbfb;
+$magnolia: #f6fff3;
+$forest-green: #248700;
+$ds-card-color: rgba(77, 104, 114, 0.3);
+$gainsboro: #d8d8d8;
+$pattens-blue: #dee7ed;
+$blue-romance: #dcf7d6;
+$aulto: #cac5c5;
+$kellygreen: #66cc00;
+$red: #ff0000;
+$guardsman-red: #a91d22;
+$cardinal: #c12335; // according to tds, for error

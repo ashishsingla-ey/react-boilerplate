@@ -1,0 +1,214 @@
+//main body
+body {
+  background-color: $body-bg;
+  overflow-x: hidden;
+  @extend .ff-nl !optional;
+}
+
+//app.js
+#page-content-wrapper {
+  min-width: 100vw !important;
+}
+
+@media (min-width: 768px) {
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+//app icon
+/* .testApp-icons {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+} */
+
+// confirm-modal
+.alert-icon {
+  background: url('../../images/alert@1.5x.svg') no-repeat;
+  @include icon-size(45px, 45px, null);
+}
+
+.confirm-modal .modal-content {
+  border-top: 5px solid $harley-davidson-orange;
+}
+
+/**************** Modal Dialog **********************/
+/* Delete Modal */
+.confirm-modal .modal-content {
+  border-top: 5px solid $harley-davidson-orange;
+
+  & .modal-header div {
+    color: $primary;
+  }
+
+  & .modal-footer {
+    border-top: none !important;
+    display: block !important;
+    text-align: center !important;
+
+    & button {
+      min-width: 100px !important;
+      padding: 0.5rem !important;
+    }
+  }
+}
+
+/* Form Modal */
+.form-modal .modal-dialog .modal-content {
+  & .modal-body {
+    & .form-group label {
+      margin-bottom: 0.25rem !important;
+    }
+  }
+}
+
+// .dynamic-form-fields {
+//   width: 368px;
+// }
+//dynamic modal
+.form-modal-footer.form-modal .modal-dialog .modal-content {
+  //   margin-top: 80px;
+  border: none;
+  background-color: $white;
+  //   width: 440px;
+  width: 100%;
+
+  padding-top: rem(24) !important;
+  padding-left: rem(24) !important;
+  padding-right: rem(49) !important;
+
+  & .modal-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    overflow: none !important;
+    background-color: $white;
+  }
+
+  &.modal-body > * {
+    flex: 1 1;
+    // width: 368px;
+  }
+
+  & .modal-footer {
+    border-top: none !important;
+    display: block !important;
+    text-align: left !important;
+
+    & button {
+      height: 40px;
+      width: 90px;
+    }
+  }
+}
+
+/***************** Modal Dialog End *****************/
+
+//modal
+.modal-90w {
+  width: 90%;
+  max-width: none !important;
+}
+
+// common dotLink for connectioncardview and sourcecardview
+.dotLink {
+  background: url('../../images/menu@1.5x.svg') no-repeat;
+  @include icon-size(23px, 5px, null);
+  cursor: pointer;
+}
+
+//card
+.card-shadow {
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: 0 1px 2px 0 $black16;
+  /* height: 153px;
+  overflow: auto; */
+}
+
+.card-shadow:hover {
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: 0 3px 6px 0 $black16;
+}
+
+// common table
+.table {
+  margin: 0 !important;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: $white;
+}
+
+.w-header tbody tr:last-child {
+  border-bottom: 1px solid $whisper;
+}
+
+.w-header thead th {
+  font: caption;
+  border: none;
+  font-size: rem(12);
+  height: 50px;
+  color: $bright-grey;
+  @extend .ff-nr !optional;
+}
+
+.w-header tbody tr {
+  height: 50px;
+}
+
+.w-header tbody td {
+  vertical-align: bottom;
+  font-size: rem(14);
+  font-weight: 300;
+  color: $bunker;
+  @extend .ff-nl !optional;
+
+  & span.no-overlay-data {
+    margin-left: rem(30);
+  }
+}
+
+.w-header tbody tr:nth-child(odd) {
+  background-color: $snow;
+}
+
+.w-header tbody tr:nth-of-type(even) {
+  background-color: $white;
+}
+
+//other
+.pag-icon {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+}
+
+//button
+.cancel {
+  color: $bright-grey;
+  // font-size: rem(14px);
+  border: 1px solid $whisper;
+}
+
+.secondary-button-hover {
+  &:hover,
+  &:active {
+    color: $white !important;
+    background-color: $bright-grey !important;
+    border-color: $bright-grey !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $bright-grey-5 !important;
+  }
+}

@@ -1,0 +1,156 @@
+.expand-dynamic-form {
+  width: 1321px !important;
+}
+
+.dynamic-form {
+  width: min-content;
+  height: calc(100vh - 80px);
+
+  .modal-dialog {
+    text-align: left;
+    /* you'll likely want this */
+    // max-width: 100%;
+    min-width: 100%;
+    display: inline-block;
+  }
+
+  .modal-body {
+    min-height: auto;
+    max-height: 720px !important;
+    height: auto !important;
+
+    .form-control {
+      width: 368px !important;
+      margin-right: rem(56) !important;
+    }
+  }
+}
+
+//dynamic form
+.modal-right.modal {
+  right: 0;
+  left: unset;
+  //   width: 71%
+  margin-top: rem(80);
+  background-color: $white;
+}
+
+.modal-right .modal-dialog {
+  margin: 0;
+  //   width: 500px;
+}
+
+.dynamic-form-modal-header {
+  justify-content: none;
+  padding: 0;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  //   height: 60px;
+  @extend .ff-nt !optional;
+
+  &.form-control {
+    width: 368px !important;
+  }
+}
+
+.dynamic-form-modal-header .modal-content {
+  border-radius: 0;
+}
+
+// form select dropdown
+#form-select-dropdown {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  & .dropdown-toggle {
+    &::after {
+      float: right;
+      margin-left: 0px !important;
+    }
+
+    & .select-placeholder {
+      color: $bunker;
+      opacity: 0.4;
+      font-size: rem(14);
+      line-height: 16px;
+    }
+  }
+
+  &.show button {
+    @include select-dropdown-button(true);
+  }
+
+  &.dropdown button {
+    @include select-dropdown-button();
+
+    & span {
+      max-width: 300px;
+      margin-top: rem(2);
+    }
+  }
+
+  & div.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 250px;
+    overflow-x: auto;
+    border-radius: 0 0 5px 5px;
+    border: none !important;
+    box-shadow: 0 2px 4px 0 $black2;
+    margin: 0px 0px 0px 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    & a.dropdown-item {
+      text-align: left;
+      font-size: rem(14);
+      line-height: 17px;
+      width: 368px;
+      height: 50px;
+      padding: rem(16) 0px rem(10) rem(18) !important;
+      border-bottom: 1px solid $gainsboro;
+
+      &.active {
+        color: $secondary !important;
+        text-decoration: none;
+        background-color: transparent !important;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: transparent !important;
+        color: $secondary !important;
+      }
+    }
+
+    & a.dropdown-item:last-child {
+      border-bottom: none !important;
+    }
+  }
+}
+
+// asterisk sign
+.asterisk-sign {
+  font-size: rem(20);
+  top: rem(5);
+  position: relative;
+  color: $red;
+}
+
+.input-with-icon {
+  background-image: url('../../images/field_error.svg');
+  background-position: right;
+  padding-right: rem(30);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  border: 1px solid $cardinal;
+}
+
+.custom-select-error-border {
+  #form-select-dropdown.dropdown button {
+    border: 1px solid $cardinal !important;
+  }
+}

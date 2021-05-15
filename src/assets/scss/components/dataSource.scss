@@ -1,0 +1,361 @@
+@import '../abstract/mixins.scss';
+
+//ds table height
+.ds-height {
+  @include cal-height(250px);
+}
+
+.preview-ds-height {
+  //   @include cal-height(250px);
+  @include cal-height(275px);
+}
+
+/* icons for datasource (sourceType) */
+.icon-s3a {
+  @include icon-size();
+  content: url('../../images/amazon_redshift.svg');
+}
+
+.icon-gcs {
+  @include icon-size();
+  content: url('../../images/google-cloud_logo.svg');
+}
+
+.icon-hdfs {
+  @include icon-size();
+  content: url('../../images/hdfs.svg');
+}
+
+.icon-sftp {
+  @include icon-size();
+  content: url('../../images/sftp.svg');
+}
+
+.icon-json {
+  @include icon-size();
+  content: url('../../images/json_filetype.svg');
+}
+
+.icon-xml {
+  @include icon-size();
+  content: url('../../images/xml_filetype.svg');
+}
+
+.icon-csv {
+  @include icon-size();
+  content: url('../../images/csv_filetype.svg');
+}
+
+.icon-tsv {
+  @include icon-size();
+  content: url('../../images/tsv_filetype.svg');
+}
+
+.icon-txt {
+  @include icon-size();
+  content: url('../../images/txt_filetyp.svg');
+}
+
+.icon-orc {
+  @include icon-size();
+  content: url('../../images/orc_filetype.svg');
+}
+
+.icon-mysql {
+  @include icon-size();
+  content: url('../../images/sqlserver_logo.svg');
+}
+
+.icon-postgres {
+  @include icon-size();
+  content: url('../../images/postGresql.svg');
+}
+
+.icon-jdbc {
+  @include icon-size();
+  content: url('../../images/jdbc.svg');
+}
+
+.icon-parquet {
+  @include icon-size();
+  content: url('../../images/parquet_filetyp.svg');
+}
+
+.icon-bigquery {
+  @include icon-size();
+  content: url('../../images/BigQuery.svg');
+}
+
+.icon-mongodb {
+  @include icon-size();
+  content: url('../../images/mongoDB.svg');
+}
+
+.icon-avro {
+  @include icon-size();
+  content: url('../../images/avro_filetype.svg');
+}
+
+.icon-excel {
+  @include icon-size();
+  content: url('../../images/excel.svg');
+}
+
+.icon-cassandra {
+  @include icon-size();
+  content: url('../../images/cassendra.svg');
+}
+
+.icon-chronology {
+  @include icon-size(24px, 24px);
+  content: url('../../images/chronology.svg');
+}
+
+.dsCardOption .dropdown-menu {
+  top: rem(-6) !important;
+  //   left: -55px !important;
+  width: 50px;
+  min-width: 56px;
+  text-align: center;
+  height: auto;
+  min-height: 100px;
+  margin-bottom: rem(8);
+  //   margin-left: 100px !important;
+  transform: none !important;
+  border-radius: 5px;
+  background-color: $white;
+  border: none;
+  box-shadow: 0 2px 4px 0 $ds-card-color;
+}
+
+.dsCardOption button {
+  border: none;
+  padding: 0 rem(1);
+  /* margin: 0; */
+}
+
+.dsCardOption .btn-primary:hover,
+.dsCardOption .btn-primary:focus {
+  background-color: $white;
+  border-color: none;
+  border: none;
+}
+
+.dsCardOption .btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: $white;
+  border: none;
+}
+
+.dsCardOption .btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.dsCardOption .btn:focus,
+.btn.focus {
+  box-shadow: none;
+  border: none;
+}
+
+.cardViewDeleteBox .btn-primary.dropdown-toggle:focus {
+  box-shadow: unset;
+}
+
+.modal-95w {
+  width: 95%;
+  max-width: none !important;
+}
+
+//view datasources
+
+.view-ds-modal-header {
+  justify-content: none;
+  padding: 0;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 60px;
+  padding-top: rem(16) !important;
+  padding-left: rem(16) !important;
+  padding-right: rem(16) !important;
+  background: $snow !important;
+}
+
+.view-ds-modal-header .modal-content {
+  border-radius: 0;
+}
+
+.view-source-modal .modal-body {
+  padding: 0 !important;
+}
+
+.view-source-modal .modal-header .close {
+  padding-right: 0px;
+}
+
+.view-source-table {
+  background: $snow !important;
+  border: 1px solid $gainsboro !important;
+}
+
+.view-source-table thead th {
+  border-bottom: none;
+  font-size: rem(12) !important;
+  font-weight: 500;
+  height: 66px;
+  //   align-items: center;
+  background: $gainsboro !important;
+  color: $bright-grey !important;
+  line-height: 15px;
+  //   padding-top: 15px !important;
+  //   padding-left: 17px !important;
+  //   padding-bottom: 17px !important;
+  padding-top: rem(16) !important;
+  padding-left: rem(18) !important;
+  padding-bottom: rem(18) !important;
+  @extend .ff-nb !optional;
+  border-right: 1px solid $bright-grey;
+
+  &:first-child {
+    vertical-align: baseline;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.view-source-table tbody td {
+  font-size: rem(14) !important;
+  font-weight: 300;
+  vertical-align: bottom;
+  height: 53px !important;
+  background: $snow !important;
+  color: $bunker !important;
+  //   padding-top: 17px !important;
+  //   padding-left: 17px !important;
+  //   padding-bottom: 19px !important;
+  padding-top: rem(18) !important;
+  padding-left: rem(18) !important;
+  padding-bottom: rem(18) !important;
+  line-height: 16px;
+  @extend .ff-nl !optional;
+
+  &:first-child {
+    @extend .ff-nb !optional;
+  }
+}
+
+//preview otc-config add datasource
+.preview-add-source-modal {
+  width: 100%;
+  height: 100vh;
+  padding-left: 0 !important;
+  margin-top: rem(80);
+
+  .modal-dialog {
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .modal-content {
+    height: 100vh !important;
+  }
+
+  .table-header {
+    padding-left: rem(18) !important;
+    padding-right: rem(18) !important;
+    padding-bottom: rem(12) !important;
+  }
+}
+
+.preview-datasource {
+  background: $snow !important;
+}
+
+.preview-datasource thead th {
+  border-bottom: none;
+  font-size: rem(12) !important;
+  font-weight: 500;
+  height: 66px;
+  //   align-items: center;
+  background: $gainsboro !important;
+  color: $bright-grey !important;
+  //   line-height: 15px;
+  padding: 0px !important;
+  @extend .ff-nb !optional;
+  border-right: 1px solid $aulto !important;
+
+  &:first-child {
+    vertical-align: inherit;
+    text-align: center;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.preview-datasource tbody td {
+  border-left: 1px solid $aulto;
+  border-right: 1px solid $aulto;
+  font-size: rem(14) !important;
+  font-weight: 300;
+  vertical-align: bottom;
+  height: 53px !important;
+  background: $snow !important;
+  color: $bunker !important;
+  padding-top: rem(18) !important;
+  padding-left: rem(18) !important;
+  padding-bottom: rem(18) !important;
+  line-height: 16px;
+  @extend .ff-nl !optional;
+
+  &:first-child {
+    @extend .ff-nb !optional;
+    vertical-align: inherit;
+    text-align: center;
+    border-left: none;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.preview-hamburger {
+  @include icon-size(24px, 24px);
+  content: url('../../images/hamburger.svg');
+}
+
+.preview-header-col {
+  cursor: pointer;
+  height: 65%;
+  padding-left: rem(18);
+
+  & div.mb-1 {
+    display: inline-block;
+  }
+
+  & div.preview-drop-col {
+    float: right;
+    width: 20px !important;
+
+    &.hide-drop-col {
+      display: none !important;
+    }
+  }
+}
+
+.dropped-column-warning {
+  float: right;
+
+  & span.warning-text {
+    color: $guardsman-red;
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="30px" viewBox="0 0 27 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>4AA97E4D-7E34-4462-AC19-05B358625340@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="49.9926632%" x2="100%" y2="49.9926632%" id="linearGradient-1">
+            <stop stop-color="#FFDF00" offset="0%"></stop>
+            <stop stop-color="#FF6600" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0073735%" x2="100%" y2="50.0073735%" id="linearGradient-2">
+            <stop stop-color="#A2FFBA" offset="0%"></stop>
+            <stop stop-color="#5FCDFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0176211454%" y1="50%" x2="100.035242%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFED6E" offset="0%"></stop>
+            <stop stop-color="#5FF182" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FAB051" offset="0%"></stop>
+            <stop stop-color="#5FCDFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0126582278%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#46FF83" offset="0%"></stop>
+            <stop stop-color="#00DC16" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.118644068%" y1="50.0070932%" x2="100.050847%" y2="50.0070932%" id="linearGradient-6">
+            <stop stop-color="#00FEFF" offset="0%"></stop>
+            <stop stop-color="#0098FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="001_connections_empty" transform="translate(-50.000000, -25.000000)" fill-rule="nonzero">
+            <g id="header_top">
+                <g id="testApp-logo" transform="translate(50.000000, 25.000000)">
+                    <path d="M0,9 C1.48259486,14.4349523 4.33674419,18.8898313 8.4,22.8 L0,22.8 L0,9 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                    <path d="M18,7.8 L27,7.8 L27,21.6 C25.3446089,16.2965344 22.422833,11.7603008 18,7.8 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                    <path d="M4.4553304,15.6 C2.87577093,12.8714908 1.46537445,10.4401046 0,7.91665214 L11.7885463,1.2 L12,1.35483871 C8.15788546,5.30531822 5.80229075,10.0341761 4.4553304,15.6 Z" id="Path" fill="url(#linearGradient-3)"></path>
+                    <path d="M1.8,23.3976757 C7.16093013,24.5667363 12.7487148,24.360583 18,22.8 L13.6553317,30 L1.8,23.3976757 Z" id="Path" fill="url(#linearGradient-4)"></path>
+                    <path d="M25.8,6.82988764 C20.2028354,5.53752809 14.6907342,5.67910112 9,7.2 L13.3807595,0 C17.568,2.30561798 21.6850633,4.56674157 25.8,6.82988764 Z" id="Path" fill="url(#linearGradient-5)"></path>
+                    <path d="M22.5152542,15.6 L27,23.1585189 L14.4,30 C18.4298644,25.9898993 21.1078983,21.2811463 22.5152542,15.6 Z" id="Path" fill="url(#linearGradient-6)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
